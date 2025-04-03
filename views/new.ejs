@@ -1,0 +1,41 @@
+<!-- Include the header partial with the title "Create a New Post" -->
+<%- include('partials/header', { title: 'Create a New Post' }) %>
+
+<!-- Create a heading for the page -->
+<h1 class="my-4">Create a New Post</h1>
+
+<!-- Create a form that submits to the "/posts" route using the POST method -->
+<form action="/posts" method="POST">
+
+  <!-- Create a form group for the title input field -->
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" name="title" class="form-control" placeholder="Title" required>
+  </div>
+
+  <!-- Create a form group for the content textarea field -->
+  <div class="form-group">
+    <label for="content">Content</label>
+    <textarea name="content" class="form-control" placeholder="Content" rows="5" required></textarea>
+  </div>
+
+  <!-- Create a form group for the author input field -->
+  <div class="form-group">
+    <label for="author">Author</label>
+    <input type="text" name="author" class="form-control" placeholder="Author" required>
+  </div>
+
+  <!-- Create a form group for the tags input field -->
+  <div class="form-group">
+    <label for="tags">Tags (comma separated)</label>
+    <input type="text" name="tags" class="form-control" placeholder="e.g. JavaScript, Node.js, Express" required>
+  </div>
+
+  <!-- Create a submit button for the form -->
+  <button type="submit" class="btn btn-success">Create Post</button>
+
+<!-- Close the form -->
+</form>
+
+<!-- Include the footer partial -->
+<%- include('partials/footer') %>

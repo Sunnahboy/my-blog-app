@@ -1,0 +1,41 @@
+<!-- This line includes the header partial and passes the title 'Edit Post' as an option -->
+<%- include('partials/header', { title: 'Edit Post' }) %>
+
+<!-- This line displays an h1 heading with the text 'Edit Post' -->
+<h1 class="my-4">Edit Post</h1>
+
+<!-- This form submits a PUT request to the '/posts/:id' route with the post's id -->
+<form action="/posts/<%= post.id %>?_method=PUT" method="POST">
+
+  <!-- This div contains a form group with a label for the post's title and an input field -->
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" name="title" class="form-control" value="<%= post.title %>" required>
+  </div>
+
+  <!-- This div contains a form group with a label for the post's content and a textarea field -->
+  <div class="form-group">
+    <label for="content">Content</label>
+    <textarea name="content" class="form-control" rows="5" required><%= post.content %></textarea>
+  </div>
+
+  <!-- This div contains a form group with a label for the post's author and an input field -->
+  <div class="form-group">
+    <label for="author">Author</label>
+    <input type="text" name="author" class="form-control" value="<%= post.author %>" required>
+  </div>
+
+  <!-- This div contains a form group with a label for the post's tags and an input field -->
+  <div class="form-group">
+    <label for="tags">Tags (comma separated)</label>
+    <input type="text" name="tags" class="form-control" value="<%= post.tags.join(', ') %>" required>
+  </div>
+
+  <!-- This button submits the form and displays the text 'Save Changes' -->
+  <button type="submit" class="btn btn-success">Save Changes</button>
+
+</form>
+
+<!-- This line includes the footer partial -->
+<%- include('partials/footer') %>
+

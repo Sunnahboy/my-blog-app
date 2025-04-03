@@ -1,0 +1,30 @@
+<!-- Include the header partial with the title "Home" -->
+<%- include('partials/header', { title: 'Home' }) %>
+
+<!-- Create a heading for the page -->
+<h1 class="my-4">My Blog</h1>
+
+<!-- Create a list group for displaying the blog posts -->
+<div class="list-group">
+  <!-- Loop through each post and display its details -->
+  <% posts.forEach(post => { %>
+    <div class="list-group-item mb-3">
+      <!-- Display the post title -->
+      <h2 class="h5"><%= post.title %></h2>
+      <!-- Display the post content -->
+      <p><%= post.content %></p>
+      <!-- Display the author and creation date of the post -->
+      <small>by <%= post.author %> on <%= post.createdAt %></small>
+      <!-- Display the tags associated with the post -->
+      <p>Tags: <%= post.tags.join(', ') %></p>
+      <!-- Create an edit button for the post -->
+      <a href="/posts/<%= post.id %>/edit" class="btn btn-warning btn-sm">Edit</a>
+      <!-- Create a delete form for the post -->
+      <form action="/posts/<%= post.id %>?_method=DELETE" method="POST" style="display:inline;">
+        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+      </form>
+    </div>
+  <% }) %>
+</div>
+<!-- Include the footer partial -->
+<%- include('partials/footer') %>

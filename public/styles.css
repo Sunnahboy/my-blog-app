@@ -1,0 +1,98 @@
+
+/*body {
+    padding-top: 20px;
+    font-family: Arial, sans-serif;
+    background-color: rgb(178, 165, 184);
+  }*/
+  /* This CSS file defines the styles for the blog app. */
+  
+  /* The body element has a background gradient that changes over time. */
+  body {
+    background: linear-gradient(300deg, #00bfff, rgb(178, 165, 184), #847674);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  /* The animation changes the background position over time. */
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* The container has a maximum width and is centered. */
+  .container {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  /* The h1 element is centered and has a bottom margin. */
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* The form-group margin-bottom is set to 20px. */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* The list-group-item has rounded corners, padding, a background color, and a box shadow. */
+  .list-group-item {
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #c3c2d3;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* The h2, p, and small elements within list-group-item have margins. */
+  .list-group-item h2 {
+    margin-bottom: 10px;
+  }
+  
+  .list-group-item p {
+    margin-bottom: 10px;
+  }
+  
+  .list-group-item small {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* The btn element has a right margin. */
+  .btn {
+    margin-right: 10px;
+  }
+  
+  /* The navbar has a bottom margin. */
+  .navbar {
+    margin-bottom: 30px;
+  }
+  
+  /* The textarea can be resized vertically. */
+  textarea {
+    resize: vertical;
+  }
+  
+  /* The navbar-brand and nav-link elements have bold font, a specific font size, padding, and a border radius. */
+  .navbar-brand{
+    font-weight: bold;
+    font-size: 20px;
+    padding: auto;
+    border-radius: 5px;
+  }
+  
+  .nav-link{
+    font-weight: bold;
+    font-size: 20px;
+    padding: auto;
+    border-radius: 5px;
+    background-color: rgb(219, 240, 233);
+  }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Declare the document type -->
+  <title><%= title %> - My Blog</title>
+  <!-- Set the title of the webpage -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Link to an external CSS file (Bootstrap) -->
+  <link rel="stylesheet" href="/styles.css">
+  <!-- Link to a local CSS file -->
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Create a navigation bar -->
+    <div class="container">
+      <!-- Create a container for the navigation bar -->
+      <a class="navbar-brand" href="/">Home</a>
+      <!-- Create a hyperlink to the home page -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Create a button to toggle the navigation bar -->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Create a container for the navigation bar links -->
+        <ul class="navbar-nav ml-auto">
+          <!-- Create a list of navigation bar links -->
+          <li class="nav-item">
+            <!-- Create a list item for a navigation bar link -->
+            <a class="nav-link" href="/posts/new">Create a New Post</a>
+            <!-- Create a hyperlink to the create a new post page -->
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
