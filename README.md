@@ -5,6 +5,12 @@
 
 A lightweight blog application built with Express, EJS, and Node.js that allows you to create, edit, and delete posts in a simple, in-memory datastore.
 
+Live Demo
+
+🔗 Test the Live Version Here: [https://my-blog-app-ght7.onrender.com]
+
+Click the link above to try out the blog! You can add new posts, edit existing ones, and delete them in real-time.
+
 ## Overview
 
 My Blog App demonstrates core web development concepts using Node.js and Express. It features:
