@@ -1,4 +1,5 @@
-![Uploading image.png…]()
+<img width="857" alt="image" src="https://github.com/user-attachments/assets/c30b54de-cbed-46b4-aae1-282480b6cc5e" />
+
 
 # My Blog App
 
